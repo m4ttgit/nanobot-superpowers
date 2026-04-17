@@ -8,17 +8,31 @@ These skills are adapted from [superpowers](https://github.com/obra/superpowers)
 
 Skills are `.md` files that teach nanobot how to behave in specific situations. When you install a skill, nanobot reads it and follows its guidance automatically.
 
-## Included Skills
+## Included Skills (13 total)
 
-| Skill | When to Use |
-|-------|-------------|
-| **brainstorming** | Starting any creative work — explore before implementing |
-| **systematic-debugging** | Any bug or unexpected behavior — find root cause first |
-| **verification-before-completion** | Before claiming work is done — verify with evidence |
-| **test-driven-development** | Before writing code — test first, then implement |
-| **writing-plans** | Before starting implementation — write the plan first |
-| **instagram-poster** | Post images to Instagram via the Graph API |
-| **equity-report** | Generate professional equity research reports |
+| Skill | Ported | Why |
+|-------|--------|-----|
+| **brainstorming** | ✅ Yes | Core creative process — essential for any new work |
+| **systematic-debugging** | ✅ Yes | Core quality process — essential for any bug fix |
+| **verification-before-completion** | ✅ Yes | Core discipline — prevents false "done" claims |
+| **test-driven-development** | ✅ Yes | Core implementation process — ensures correctness |
+| **writing-plans** | ✅ Yes | Core planning process — enables structured execution |
+| **writing-skills** | ✅ Yes | Meta-skill — enables creating new skills |
+| **executing-plans** | ✅ Yes | Complements writing-plans — executes what was planned |
+| **finishing-a-development-branch** | ✅ Yes | Completes the workflow — verifies and presents options |
+| **using-superpowers** | ✅ Yes | Meta-skill — ensures skills are invoked correctly |
+| **receiving-code-review** | ✅ Yes | Quality gate — handles feedback rigorously |
+| **requesting-code-review** | ✅ Yes | Quality gate — requests review before completion |
+| **instagram-poster** | ✅ Yes | Utility skill — posts images to Instagram |
+| **equity-report** | ✅ Yes | Utility skill — generates equity research reports |
+
+### Not Ported (3 skills)
+
+| Skill | Reason Not Ported |
+|-------|-------------------|
+| **dispatching-parallel-agents** | Requires subagent support that nanobot doesn't have. The `spawn` tool exists but parallel dispatch with isolated context isn't the same pattern. |
+| **subagent-driven-development** | Requires sophisticated subagent orchestration with two-stage review loops. Too tightly coupled to OpenCode's Task system. |
+| **using-git-worktrees** | Git worktrees are a specific git workflow. Porting would require adapting to nanobot's execution model, and the core principle (isolated workspace) is already covered by executing-plans. |
 
 ## Quick Start
 
@@ -83,6 +97,36 @@ Red-Green-Refactor cycle: RED (write failing test) → GREEN (minimal code) → 
 
 Bite-sized tasks: Each step is one action (2-5 minutes). No placeholders. Exact file paths, complete code, exact commands.
 
+### writing-skills
+**Use when:** Creating a new skill for nanobot — either from scratch or porting from another framework.
+
+**Core principle:** Skills should be scannable in 30 seconds, actionable in detail, and teach nanobot HOW to behave, not just WHAT to do.
+
+### executing-plans
+**Use when:** You have a written implementation plan to execute — step-by-step tasks with clear instructions.
+
+**Core principle:** Load plan, review critically, execute all tasks, report when complete. Stop when blocked.
+
+### finishing-a-development-branch
+**Use when:** Completing feature work — all tasks done, ready to finalize before merge or delivery.
+
+**Core principle:** Verify everything works, present options, let the user choose. Never merge without explicit consent.
+
+### using-superpowers
+**Use when:** Starting any conversation or task — check if relevant skills exist before responding.
+
+**Core principle:** If a skill might apply, invoke it BEFORE taking any action. Skills teach HOW to behave, not just WHAT to do.
+
+### receiving-code-review
+**Use when:** Receiving code review feedback — before implementing suggestions, especially if feedback seems unclear or questionable.
+
+**Core principle:** Verify before implementing. Ask before assuming. Technical correctness over social performance.
+
+### requesting-code-review
+**Use when:** Completing tasks, implementing major features, or before delivery to verify work meets requirements.
+
+**Core principle:** Review early, review often. Catch issues before they cascade.
+
 ## Project Structure
 
 ```
@@ -104,6 +148,12 @@ nanobot-superpowers/
     ├── verification-before-completion/SKILL.md
     ├── test-driven-development/SKILL.md
     ├── writing-plans/SKILL.md
+    ├── writing-skills/SKILL.md
+    ├── executing-plans/SKILL.md
+    ├── finishing-a-development-branch/SKILL.md
+    ├── using-superpowers/SKILL.md
+    ├── receiving-code-review/SKILL.md
+    ├── requesting-code-review/SKILL.md
     ├── instagram-poster/SKILL.md
     ├── instagram-poster/post.py
     └── equity-report/SKILL.md
