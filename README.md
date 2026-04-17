@@ -34,6 +34,36 @@ Skills are `.md` files that teach nanobot how to behave in specific situations. 
 | **subagent-driven-development** | Requires sophisticated subagent orchestration with two-stage review loops. Too tightly coupled to OpenCode's Task system. |
 | **using-git-worktrees** | Git worktrees are a specific git workflow. Porting would require adapting to nanobot's execution model, and the core principle (isolated workspace) is already covered by executing-plans. |
 
+## Skill Triggers
+
+Skills activate in two ways:
+
+### Explicit Invocation (Complex Process Skills)
+Invoke explicitly — these require reading the full skill:
+
+| Trigger | Skill |
+|---------|-------|
+| "Use brainstorming" / "Design this" | brainstorming |
+| "Use TDD" / "Write tests first" | test-driven-development |
+| "Write a plan" / "Create a plan" | writing-plans |
+| "Execute the plan" | executing-plans |
+| "Finish up" / "Ready to merge" | finishing-a-development-branch |
+| "Create a skill" / "Port a skill" | writing-skills |
+| "Request review" | requesting-code-review |
+| "Received feedback" | receiving-code-review |
+
+### Auto-Trigger (Utility Skills)
+These activate on domain keywords automatically:
+
+| Keywords | Skill |
+|----------|-------|
+| instagram, post to IG, IG, carousel | instagram-poster |
+| equity report, analyze stock, [symbol] | equity-report |
+| debug, fix this bug, error, not working | systematic-debugging |
+| verify, test it, is it working | verification-before-completion |
+
+See [skills/TRIGGERS.md](skills/TRIGGERS.md) for full trigger list.
+
 ## Quick Start
 
 ### Option 1: Copy Individual Skills
@@ -158,6 +188,12 @@ nanobot-superpowers/
     ├── instagram-poster/post.py
     └── equity-report/SKILL.md
 ```
+
+## Documentation
+
+- [When to Create a Skill](docs/when-to-create-skills.md) — Decide if a skill is the right solution
+- [Skill Activation Models](docs/skill-activation-models.md) — Choose how to activate skills (tiered hybrid, explicit, always-on)
+- [Adapting Skills for Nanobot](docs/adapting-skills.md) — Port skills from other frameworks
 
 ## Adapting Skills for Nanobot
 
