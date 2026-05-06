@@ -9,7 +9,7 @@ Additional skills are adapted from [alirezarezvani/claude-skills](https://github
 
 Skills are `.md` files that teach nanobot how to behave in specific situations. When you install a skill, nanobot reads it and follows its guidance automatically.
 
-## Included Skills (94 total: 71 adapted + 10 new + 13 original)
+## Included Skills (127 total: 104 adapted + 10 new + 13 original)
 
 ### Core Superpowers (13)
 | Skill | Ported | Why |
@@ -84,13 +84,51 @@ Skills are `.md` files that teach nanobot how to behave in specific situations. 
 | **nanobot-security-pen-testing** | ✅ Yes | Security testing workflows |
 | **nanobot-dependency-auditor** | ✅ Yes | Dependency analysis, vulnerability scanning |
 
-### Marketing Skills (3)
+### Marketing Skills (37)
 | Skill | Ported | Why |
 |-------|--------|-----|
 | **nanobot-ad-creative** | ✅ Yes | Ad creative frameworks, platform-specific specs |
 | **nanobot-brand-guidelines** | ✅ Yes | Brand identity, messaging frameworks |
 | **nanobot-campaign-analytics** | ✅ Yes | Campaign ROI, attribution models, A/B testing |
 | **nanobot-seo-audit** | ✅ Yes | Technical SEO, E-E-A-T, schema markup |
+| **nanobot-ai-seo** | ✅ Yes | AI search optimization, citation readiness |
+| **nanobot-analytics-tracking** | ✅ Yes | Marketing analytics, event tracking setup |
+| **nanobot-app-store-optimization** | ✅ Yes | App store listing optimization, conversion |
+| **nanobot-churn-prevention** | ✅ Yes | Churn analysis, retention strategies |
+| **nanobot-cold-email** | ✅ Yes | Cold email frameworks, deliverability |
+| **nanobot-competitor-alternatives** | ✅ Yes | Competitive analysis, positioning |
+| **nanobot-content-production** | ✅ Yes | Content pipeline, SEO optimization |
+| **nanobot-content-strategy** | ✅ Yes | Content planning, topic clusters |
+| **nanobot-copywriting** | ✅ Yes | Conversion copy, landing pages |
+| **nanobot-email-sequence** | ✅ Yes | Email nurture, onboarding sequences |
+| **nanobot-marketing-ops** | ✅ Yes | Marketing automation, workflow setup |
+| **nanobot-marketing-psychology** | ✅ Yes | Consumer psychology, persuasion |
+| **nanobot-paid-ads** | ✅ Yes | Google/LinkedIn/Meta ads management |
+| **nanobot-programmatic-seo** | ✅ Yes | Programmatic SEO, large-scale content |
+| **nanobot-social-media-manager** | ✅ Yes | Social media strategy, community |
+| **nanobot-x-twitter-growth** | ✅ Yes | Twitter/X growth, viral content |
+| **nanobot-marketing-strategy-pmm** | ✅ Yes | Product marketing, GTM strategy |
+| **nanobot-content-creator** | ✅ Yes | Redirect to content-production/strategy |
+| **nanobot-content-humanizer** | ✅ Yes | AI content humanization, voice injection |
+| **nanobot-copy-editing** | ✅ Yes | Copy editing, seven-sweep framework |
+| **nanobot-form-cro** | ✅ Yes | Form optimization, conversion rate |
+| **nanobot-free-tool-strategy** | ✅ Yes | Free tool planning, lead generation |
+| **nanobot-launch-strategy** | ✅ Yes | Product launch, GTM, momentum |
+| **nanobot-marketing-context** | ✅ Yes | Marketing context, brand voice setup |
+| **nanobot-marketing-demand-acquisition** | ✅ Yes | Demand gen, paid media, CAC optimization |
+| **nanobot-marketing-ideas** | ✅ Yes | 139 proven marketing ideas library |
+| **nanobot-onboarding-cro** | ✅ Yes | User onboarding, activation optimization |
+| **nanobot-page-cro** | ✅ Yes | Page conversion rate optimization |
+| **nanobot-paywall-upgrade-cro** | ✅ Yes | In-app paywall, upgrade flow CRO |
+| **nanobot-popup-cro** | ✅ Yes | Popup/modal optimization, conversion |
+| **nanobot-pricing-strategy** | ✅ Yes | SaaS pricing, tier structure |
+| **nanobot-prompt-engineer-toolkit** | ✅ Yes | Prompt optimization, A/B testing |
+| **nanobot-referral-program** | ✅ Yes | Referral/affiliate program design |
+| **nanobot-schema-markup** | ✅ Yes | Structured data, rich results |
+| **nanobot-signup-flow-cro** | ✅ Yes | Signup/registration flow optimization |
+| **nanobot-site-architecture** | ✅ Yes | Site structure, URL hierarchy |
+| **nanobot-social-content** | ✅ Yes | Social media content creation |
+| **nanobot-social-media-analyzer** | ✅ Yes | Social analytics, engagement ROI |
 
 ### Product Skills (8)
 | Skill | Ported | Why |
