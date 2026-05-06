@@ -1,0 +1,13 @@
+{
+  "audit_text": "We have audited the financial statements of Example Corp. Our opinion is qualified except for the matter described. Material weakness in internal controls over revenue recognition was identified. Related party transactions with subsidiary XYZ totaling $2M (8% of revenue) were disclosed. No going concern issues were raised.",
+  "financial_data": {
+    "income_statement": {
+      "revenue": 2500000,
+      "net_income": 300000
+    },
+    "balance_sheet": {
+      "total_assets": 1000000,
+      "related_party_transactions": 200000
+    }
+  }
+}

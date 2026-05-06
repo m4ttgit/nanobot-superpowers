@@ -1,0 +1,39 @@
+{
+  "company_name": "Acme Corp",
+  "currency": "USD",
+  "fiscal_year": "FY2024",
+  "income_statement": {
+    "revenue": 10000000,
+    "cogs": 5500000,
+    "gross_profit": 4500000,
+    "operating_expenses": 2500000,
+    "ebit": 2000000,
+    "ebitda": 2200000,
+    "interest": 160000,
+    "net_income": 1500000
+  },
+  "balance_sheet": {
+    "cash": 1500000,
+    "accounts_receivable": 1425000,
+    "inventory": 800000,
+    "current_assets": 3725000,
+    "total_assets": 7725000,
+    "accounts_payable": 900000,
+    "current_liabilities": 1300000,
+    "total_debt": 2000000,
+    "total_liabilities": 3300000,
+    "total_equity": 4425000
+  },
+  "cash_flow": {
+    "operating_cash_flow": 1655000,
+    "free_cash_flow": 1155000
+  },
+  "assumptions": {
+    "revenue_growth_rate": 0.15,
+    "cogs_pct_of_revenue": 0.55
+  },
+  "market_cap": 30000000,
+  "enterprise_value": 32000000,
+  "growth_rate": 0.15,
+  "recommendation": "Buy"
+}

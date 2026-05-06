@@ -1,0 +1,28 @@
+{
+  "source_file": "sample_financials.pdf",
+  "extracted_at": "2026-05-05T00:00:00Z",
+  "statements": [
+    {
+      "type": "income_statement",
+      "page": 1,
+      "title": "Income Statement",
+      "period": "FY2024",
+      "headers": ["", "Q1", "Q2", "Q3", "Q4", "FY2024"],
+      "rows": [
+        {
+          "label": "Revenue",
+          "values": [100.0, 110.0, 120.0, 130.0, 460.0]
+        },
+        {
+          "label": "COGS",
+          "values": [60.0, 65.0, 70.0, 75.0, 270.0]
+        },
+        {
+          "label": "Gross Margin",
+          "values": [40.0, 45.0, 50.0, 55.0, 190.0]
+        }
+      ],
+      "notes": []
+    }
+  ]
+}

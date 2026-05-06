@@ -1,0 +1,70 @@
+{
+  "company_name": "Meridian Tech Inc.",
+  "currency": "USD",
+  "assumptions": {
+    "revenue_growth_rate": 0.15,
+    "cogs_pct_of_revenue": 0.55,
+    "opex_growth_rate": 0.08,
+    "capex_annual": 500000,
+    "depreciation_pct": 0.05,
+    "tax_rate": 0.25,
+    "working_capital_days": 45,
+    "debt": 2000000,
+    "equity": 5000000
+  },
+  "base_year": {
+    "revenue": 10000000,
+    "cogs": 5500000,
+    "opex": 2500000,
+    "capex": 500000,
+    "depreciation": 300000,
+    "working_capital": 1500000,
+    "debt": 2000000,
+    "equity": 5000000
+  },
+  "projections": {
+    "years": ["FY2025", "FY2026", "FY2027", "FY2028", "FY2029"],
+    "income_statement": [
+      {"line_item": "Revenue", "values": [11500000, 13225000, 15208750, 17490063, 20113572]},
+      {"line_item": "COGS", "values": [-6325000, -7273750, -8364813, -9619534, -11062464]},
+      {"line_item": "Gross Profit", "values": [5175000, 5951250, 6843938, 7870529, 9051108], "is_total": true},
+      {"line_item": "Operating Expenses", "values": [-2700000, -2916000, -3149280, -3401222, -3673319]},
+      {"line_item": "D&A", "values": [-575000, -661250, -760438, -874503, -1005679]},
+      {"line_item": "EBIT", "values": [1900000, 2374000, 2934218, 3594804, 4372110], "is_total": true},
+      {"line_item": "Interest", "values": [-160000, -160000, -160000, -160000, -160000]},
+      {"line_item": "EBT", "values": [1740000, 2214000, 2774218, 3434804, 4212110]},
+      {"line_item": "Income Tax", "values": [-435000, -553500, -693555, -858701, -1053028]},
+      {"line_item": "Net Income", "values": [1305000, 1660500, 2080663, 2576103, 3159083], "is_total": true}
+    ],
+    "balance_sheet": [
+      {"line_item": "Cash", "values": [1500000, 2000000, 2800000, 3900000, 5500000]},
+      {"line_item": "Accounts Receivable", "values": [1425000, 1638750, 1883563, 2166097, 2491001]},
+      {"line_item": "Inventory", "values": [800000, 920000, 1058000, 1216700, 1399205]},
+      {"line_item": "Total Current Assets", "values": [3725000, 4558750, 5741563, 7282797, 9390206], "is_total": true},
+      {"line_item": "PP&E (Net)", "values": [3500000, 3825000, 4200000, 4625000, 5100000]},
+      {"line_item": "Intangible Assets", "values": [500000, 450000, 400000, 350000, 300000]},
+      {"line_item": "Total Assets", "values": [7725000, 8833750, 10341563, 12257797, 14790206], "is_total": true},
+      {"line_item": "Accounts Payable", "values": [900000, 945000, 992250, 1041863, 1093956]},
+      {"line_item": "Accrued Expenses", "values": [400000, 420000, 441000, 463050, 486203]},
+      {"line_item": "Total Current Liabilities", "values": [1300000, 1365000, 1433250, 1504913, 1580159], "is_total": true},
+      {"line_item": "Long-Term Debt", "values": [2000000, 2000000, 2000000, 2000000, 2000000]},
+      {"line_item": "Total Liabilities", "values": [3300000, 3365000, 3433250, 3504913, 3580159], "is_total": true},
+      {"line_item": "Shareholders Equity", "values": [4425000, 5468750, 6908313, 8752884, 11210047], "is_total": true}
+    ],
+    "cash_flow": [
+      {"line_item": "Net Income", "values": [1305000, 1660500, 2080663, 2576103, 3159083]},
+      {"line_item": "D&A", "values": [575000, 661250, 760438, 874503, 1005679]},
+      {"line_item": "Change in AR", "values": [-225000, -213750, -244813, -282534, -324903]},
+      {"line_item": "Change in Inventory", "values": [-80000, -120000, -138000, -158700, -182505]},
+      {"line_item": "Change in AP", "values": [90000, 45000, 47250, 49613, 52093]},
+      {"line_item": "Operating Cash Flow", "values": [1655000, 2088000, 2612538, 3156085, 3698447], "is_total": true},
+      {"line_item": "CapEx", "values": [-500000, -575000, -661250, -760438, -874503]},
+      {"line_item": "Investing Cash Flow", "values": [-500000, -575000, -661250, -760438, -874503], "is_total": true},
+      {"line_item": "Debt Repayment", "values": [0, 0, 0, 0, 0]},
+      {"line_item": "Financing Cash Flow", "values": [0, 0, 0, 0, 0], "is_total": true},
+      {"line_item": "Net Change in Cash", "values": [1155000, 1513000, 1951288, 2395647, 2823944], "is_total": true},
+      {"line_item": "Beginning Cash", "values": [500000, 1655000, 3168000, 5119288, 7514935]},
+      {"line_item": "Ending Cash", "values": [1655000, 3168000, 5119288, 7514935, 10338879], "is_total": true}
+    ]
+  }
+}

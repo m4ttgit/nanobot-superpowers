@@ -1,0 +1,13 @@
+{
+  "financial_data": {
+    "balance_sheet": {
+      "total_debt": 5000000,
+      "total_assets": 20000000,
+      "total_equity": 15000000
+    },
+    "income_statement": {
+      "ebit": 3000000
+    }
+  },
+  "notes": "Note 12: Operating lease commitments total $1.2M per year for 5 years. Note 15: Company has a variable interest entity (VIE) in subsidiary ABC with guaranteed debt of $3M. Note 18: Contingent liability from pending litigation estimated at $500k."
+}
