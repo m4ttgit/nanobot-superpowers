@@ -9,7 +9,7 @@ Additional skills are adapted from [alirezarezvani/claude-skills](https://github
 
 Skills are `.md` files that teach nanobot how to behave in specific situations. When you install a skill, nanobot reads it and follows its guidance automatically.
 
-## Included Skills (127 total: 104 adapted + 10 new + 13 original)
+## Included Skills (133 total: 110 adapted + 10 new + 13 original)
 
 ### Core Superpowers (13)
 | Skill | Ported | Why |
@@ -173,7 +173,7 @@ Skills are `.md` files that teach nanobot how to behave in specific situations. 
 | **nanobot-atlassian-admin** | ✅ Yes | User provisioning, SSO, security hardening |
 | **nanobot-atlassian-templates** | ✅ Yes | Sprint/retro templates, project charters |
 
-### C-Level Advisory (12)
+### C-Level Advisory (24)
 | Skill | Ported | Why |
 |-------|--------|-----|
 | **nanobot-ceo-advisor** | ✅ Yes | Strategic decisions, board governance, investor relations |
@@ -188,6 +188,18 @@ Skills are `.md` files that teach nanobot how to behave in specific situations. 
 | **nanobot-strategic-alignment** | ✅ Yes | Cross-functional alignment, OKR cascade |
 | **nanobot-company-os** | ✅ Yes | Operating system design, company tooling |
 | **nanobot-culture-architect** | ✅ Yes | Culture code, values, organizational DNA |
+| **nanobot-cpo-advisor** | ✅ Yes | Product strategy, roadmap prioritization, PMF |
+| **nanobot-cro-advisor** | ✅ Yes | Revenue operations, sales strategy, CAC optimization |
+| **nanobot-cho-advisor** | ✅ Yes | HR strategy, talent retention, organizational design |
+| **nanobot-cisos-onboard** | ✅ Yes | CISO onboarding, security compliance, risk audit |
+| **nanobot-founder-coach** | ✅ Yes | Founder mentoring, leadership development, decision support |
+| **nanobot-intl-expansion** | ✅ Yes | International expansion, market entry, localization |
+| **nanobot-change-management** | ✅ Yes | ADKAR framework, org change, resistance management |
+| **nanobot-scenario-war-room** | ✅ Yes | Multi-variable risk modeling, cascade analysis |
+| **nanobot-org-health-diagnostic** | ✅ Yes | 8-dimension health scoring, traffic-light diagnostics |
+| **nanobot-internal-narrative** | ✅ Yes | Cross-audience storytelling, contradiction detection |
+| **nanobot-ma-playbook** | ✅ Yes | M&A strategy, due diligence, integration planning |
+| **nanobot-competitive-intel** | ✅ Yes | Competitor tracking, battlecards, win/loss analysis |
 
 ### Data Extraction & Reporting Skills (4)
 | Skill | Ported | Why |

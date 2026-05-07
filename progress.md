@@ -1,6 +1,6 @@
 # Nanobot Skills Adaptation Progress
 
-**Last Updated:** 2026-06-06
+**Last Updated:** 2026-07-07
 **Source Repo:** [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) (784 SKILL.md files)
 **Destination:** `D:\Projects\nanobot-superpowers\skills\`
 
@@ -13,7 +13,7 @@
 - **Total SKILL.md files found:** 784
 - **Nanobot skills adapted:** 104 (71 initial + 15 batch 2 + 18 batch 3)
 - **NEW skills built from scratch:** 10 (8 finance + 2 original superpowers)
-- **Total skills in nanobot-superpowers:** 127 (104 adapted + 10 new + 13 original superpowers)
+- **Total skills in nanobot-superpowers:** 133 (110 adapted + 10 new + 13 original superpowers)
 
 ### 2. Skills Adapted (104 Total)
 
@@ -72,10 +72,13 @@ nanobot-financial-research-report
 nanobot-senior-pm, nanobot-scrum-master, nanobot-jira-expert,
 nanobot-confluence-expert, nanobot-atlassian-admin, nanobot-atlassian-templates
 
-#### C-Level Advisory (12)
+#### C-Level Advisory (24)
 nanobot-ceo-advisor, nanobot-cfo-advisor, nanobot-cto-advisor, nanobot-coo-advisor,
 nanobot-cmo-advisor, nanobot-ciso-advisor, nanobot-chief-of-staff, nanobot-board-meeting,
-nanobot-board-deck-builder, nanobot-strategic-alignment, nanobot-company-os, nanobot-culture-architect
+nanobot-board-deck-builder, nanobot-strategic-alignment, nanobot-company-os, nanobot-culture-architect,
+nanobot-cpo-advisor, nanobot-cro-advisor, nanobot-cho-advisor, nanobot-cisos-onboard,
+nanobot-founder-coach, nanobot-intl-expansion, nanobot-change-management, nanobot-scenario-war-room,
+nanobot-org-health-diagnostic, nanobot-internal-narrative, nanobot-ma-playbook, nanobot-competitive-intel
 
 ### 3. Adaptation Changes Made
 - Removed YAML frontmatter from all SKILL.md files
