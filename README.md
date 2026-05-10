@@ -9,7 +9,7 @@ Additional skills are adapted from [alirezarezvani/claude-skills](https://github
 
 Skills are `.md` files that teach nanobot how to behave in specific situations. When you install a skill, nanobot reads it and follows its guidance automatically.
 
-## Included Skills (133 total: 110 adapted + 10 new + 13 original)
+## Included Skills (156 total: 130 adapted + 13 new + 13 original)
 
 ### Core Superpowers (13)
 | Skill | Ported | Why |
@@ -27,6 +27,15 @@ Skills are `.md` files that teach nanobot how to behave in specific situations. 
 | **requesting-code-review** | ✅ Yes | Quality gate — requests review before completion |
 | **instagram-poster** | ✅ Yes | Utility skill — posts images to Instagram |
 | **equity-report** | ✅ Yes | Utility skill — generates equity research reports |
+
+### Additional Core Skills (5)
+| Skill | Ported | Why |
+|-------|--------|-----|
+| **nanobot-persona** | ✅ Yes | User persona generation for product and marketing decisions |
+| **nanobot-resume** | ✅ Yes | Resume analysis, optimization, and ATS formatting |
+| **nanobot-solo-founder** | ✅ Yes | Solo founder decision-making, prioritization, and automation |
+| **nanobot-project-health** | ✅ Yes | Project health monitoring, risk indicators, status reporting |
+| **nanobot-meeting-analyzer** | ✅ Yes | Meeting transcript analysis, communication pattern feedback |
 
 ### Engineering Skills (12)
 | Skill | Ported | Why |
@@ -83,6 +92,43 @@ Skills are `.md` files that teach nanobot how to behave in specific situations. 
 | **nanobot-red-team** | ✅ Yes | Penetration testing, adversarial review |
 | **nanobot-security-pen-testing** | ✅ Yes | Security testing workflows |
 | **nanobot-dependency-auditor** | ✅ Yes | Dependency analysis, vulnerability scanning |
+
+### More Engineering (16)
+| Skill | Ported | Why |
+|-------|--------|-----|
+| **nanobot-tech-stack-evaluator** | ✅ Yes | Technology comparison, TCO analysis |
+| **nanobot-stripe-integration-expert** | ✅ Yes | Payment integration, webhooks |
+| **nanobot-ci-cd-pipeline-builder** | ✅ Yes | CI/CD pipeline design and implementation |
+| **nanobot-mcp-server-builder** | ✅ Yes | MCP server creation and configuration |
+| **nanobot-database-designer** | ✅ Yes | Database schema design and optimization |
+| **nanobot-rag-architect** | ✅ Yes | RAG system architecture and implementation |
+| **nanobot-observability-designer** | ✅ Yes | Monitoring, logging, and observability setup |
+| **nanobot-performance-profiler** | ✅ Yes | Performance analysis and optimization |
+| **nanobot-monorepo-navigator** | ✅ Yes | Monorepo structure and navigation |
+| **nanobot-release-manager** | ✅ Yes | Release planning and version management |
+| **nanobot-runbook-generator** | ✅ Yes | Operational runbook creation |
+| **nanobot-git-worktree-manager** | ✅ Yes | Git worktree management and workflows |
+| **nanobot-env-secrets-manager** | ✅ Yes | Environment variable and secrets management |
+| **nanobot-codebase-onboarding** | ✅ Yes | Codebase understanding and onboarding |
+| **nanobot-api-design-reviewer** | ✅ Yes | API design review and best practices |
+| **nanobot-karpathy-coder** | ✅ Yes | Karpathy-style clean code architecture |
+
+### Engineering Team — Specialized (6)
+| Skill | Ported | Why |
+|-------|--------|-----|
+| **nanobot-browser-automation** | ✅ Yes | Browser automation with Playwright |
+| **nanobot-api-test-suite-builder** | ✅ Yes | Comprehensive API test suite creation |
+| **nanobot-database-schema-designer** | ✅ Yes | Advanced database schema design |
+| **nanobot-adversarial-reviewer** | ✅ Yes | Adversarial code review and edge case discovery |
+| **nanobot-pr-review-expert** | ✅ Yes | Expert pull request review |
+| **nanobot-testrail** | ✅ Yes | TestRail integration and test management |
+
+### Business Growth (2 + 1 pending)
+| Skill | Ported | Why |
+|-------|--------|-----|
+| **nanobot-contract-and-proposal-writer** | ✅ Yes | Contract drafting and proposal writing |
+| **nanobot-landing-page-generator** | ✅ Yes | Landing page copy and structure generation |
+| **nanobot-keyword-research** | ⏳ Pending | SEO keyword research and analysis (not yet ported)
 
 ### Marketing Skills (37)
 | Skill | Ported | Why |
@@ -311,67 +357,206 @@ cp -r skills/nanobot-senior-frontend ~/.nanobot/workspace/skills/
 
 ```
 nanobot-superpowers/
-├── README.md
-├── INSTALL.md
-├── CONTRIBUTING.md
-├── LICENSE
-├── .gitignore
-├── docs/
-│   └── adapting-skills.md
-├── examples/
-│   ├── brainstorming-example.md
-│   ├── debugging-example.md
-│   └── tdd-example.md
-└── skills/
-    ├── brainstorming/SKILL.md
-    ├── systematic-debugging/SKILL.md
-    ├── verification-before-completion/SKILL.md
-    ├── test-driven-development/SKILL.md
-    ├── writing-plans/SKILL.md
-    ├── writing-skills/SKILL.md
-    ├── executing-plans/SKILL.md
-    ├── finishing-a-development-branch/SKILL.md
-    ├── using-superpowers/SKILL.md
-    ├── receiving-code-review/SKILL.md
-    ├── requesting-code-review/SKILL.md
-    ├── instagram-poster/
-    ├── equity-report/
-    ├── nanobot-architect/
-    ├── nanobot-prompt-engineer/
-    ├── nanobot-code-reviewer/
-    ├── nanobot-devops/
-    ├── nanobot-self-improving-agent/
-    ├── nanobot-playwright-pro/
-    ├── nanobot-senior-frontend/
-    ├── nanobot-senior-backend/
-    ├── nanobot-senior-fullstack/
-    ├── nanobot-senior-qa/
-    ├── nanobot-senior-ml-engineer/
-    ├── nanobot-senior-data-scientist/
-    ├── nanobot-senior-data-engineer/
-    ├── nanobot-senior-computer-vision/
-    ├── nanobot-aws-solution-architect/
-    ├── nanobot-azure-cloud-architect/
-    ├── nanobot-gcp-cloud-architect/
-    ├── nanobot-senior-secops/
-    ├── nanobot-senior-security/
-    ├── nanobot-cloud-security/
-    ├── nanobot-ai-security/
-    ├── nanobot-incident-commander/
-    ├── nanobot-incident-response/
-    ├── nanobot-red-team/
-    ├── nanobot-security-pen-testing/
-    ├── nanobot-dependency-auditor/
-    ├── nanobot-tdd-guide/
-    ├── nanobot-tech-stack-evaluator/
-    ├── nanobot-stripe-integration-expert/
-    ├── nanobot-context-engine/
-    ├── nanobot-agent-designer/
-    ├── nanobot-agent-protocol/
-    ├── nanobot-agent-workflow-designer/
-    ├── nanobot-agenthub/
-    ├── nanobot-decision-logger/
-    └── nanobot-epic-design/
+    README.md
+    INSTALL.md
+    CONTRIBUTING.md
+    LICENSE
+    progress.md
+    REMAINING_SKILLS.md
+    .gitignore
+    docs/
+        adapting-skills.md
+    examples/
+        brainstorming-example.md
+        debugging-example.md
+        tdd-example.md
+    skills/
+        brainstorming/
+        equity-report/
+        executing-plans/
+        finishing-a-development-branch/
+        instagram-poster/
+        receiving-code-review/
+        requesting-code-review/
+        systematic-debugging/
+        test-driven-development/
+        using-superpowers/
+        verification-before-completion/
+        writing-plans/
+        writing-skills/
+        Nanobot Skills (130+ adapted + 13 new):
+            nanobot-ad-creative/
+            nanobot-adversarial-reviewer/
+            nanobot-agent-designer/
+            nanobot-agent-protocol/
+            nanobot-agent-workflow-designer/
+            nanobot-agenthub/
+            nanobot-agile-product-owner/
+            nanobot-ai-security/
+            nanobot-ai-seo/
+            nanobot-analytics-tracking/
+            nanobot-api-design-reviewer/
+            nanobot-api-test-suite-builder/
+            nanobot-app-store-optimization/
+            nanobot-architect/
+            nanobot-atlassian-admin/
+            nanobot-atlassian-templates/
+            nanobot-audit-interpreter/
+            nanobot-aws-solution-architect/
+            nanobot-azure-cloud-architect/
+            nanobot-bankruptcy-scorer/
+            nanobot-board-deck-builder/
+            nanobot-board-meeting/
+            nanobot-brand-guidelines/
+            nanobot-browser-automation/
+            nanobot-campaign-analytics/
+            nanobot-ceo-advisor/
+            nanobot-cfo-advisor/
+            nanobot-change-management/
+            nanobot-chief-of-staff/
+            nanobot-cho-advisor/
+            nanobot-churn-prevention/
+            nanobot-ci-cd-pipeline-builder/
+            nanobot-ciso-advisor/
+            nanobot-cisos-onboard/
+            nanobot-cloud-security/
+            nanobot-cmo-advisor/
+            nanobot-code-reviewer/
+            nanobot-codebase-onboarding/
+            nanobot-cold-email/
+            nanobot-company-os/
+            nanobot-competitive-intel/
+            nanobot-competitive-teardown/
+            nanobot-competitor-alternatives/
+            nanobot-confluence-expert/
+            nanobot-content-creator/
+            nanobot-content-humanizer/
+            nanobot-content-production/
+            nanobot-context-engine/
+            nanobot-contract-and-proposal-writer/
+            nanobot-coo-advisor/
+            nanobot-copy-editing/
+            nanobot-copywriting/
+            nanobot-cpa-officer/
+            nanobot-cpo-advisor/
+            nanobot-cro-advisor/
+            nanobot-cto-advisor/
+            nanobot-culture-architect/
+            nanobot-customer-success-manager/
+            nanobot-data-normalizer/
+            nanobot-database-designer/
+            nanobot-database-schema-designer/
+            nanobot-decision-logger/
+            nanobot-devops/
+            nanobot-doc-converter/
+            nanobot-email-sequence/
+            nanobot-email-template-builder/
+            nanobot-env-secrets-manager/
+            nanobot-epic-design/
+            nanobot-excel-projection-builder/
+            nanobot-experiment-designer/
+            nanobot-fda-consultant/
+            nanobot-financial-analyst/
+            nanobot-financial-orchestrator/
+            nanobot-financial-ratios/
+            nanobot-financial-research-report/
+            nanobot-form-cro/
+            nanobot-founder-coach/
+            nanobot-free-tool-strategy/
+            nanobot-gcp-cloud-architect/
+            nanobot-gdpr-dsgvo/
+            nanobot-git-worktree-manager/
+            nanobot-incident-commander/
+            nanobot-incident-response/
+            nanobot-internal-narrative/
+            nanobot-intl-expansion/
+            nanobot-iso13485-qms/
+            nanobot-iso27001-info-sec/
+            nanobot-jira-expert/
+            nanobot-karpathy-check/
+            nanobot-karpathy-coder/
+            nanobot-landing-page-generator/
+            nanobot-launch-strategy/
+            nanobot-ma-playbook/
+            nanobot-marketing-context/
+            nanobot-marketing-demand-acquisition/
+            nanobot-marketing-ideas/
+            nanobot-marketing-ops/
+            nanobot-marketing-psychology/
+            nanobot-marketing-strategy-pmm/
+            nanobot-mcp-server-builder/
+            nanobot-mdr-745-specialist/
+            nanobot-meeting-analyzer/
+            nanobot-monorepo-navigator/
+            nanobot-observability-designer/
+            nanobot-off-balance-scanner/
+            nanobot-onboarding-cro/
+            nanobot-orchestration/
+            nanobot-org-health-diagnostic/
+            nanobot-page-cro/
+            nanobot-paid-ads/
+            nanobot-paywall-upgrade-cro/
+            nanobot-pdf-table-extractor/
+            nanobot-performance-profiler/
+            nanobot-persona/
+            nanobot-playwright-pro/
+            nanobot-popup-cro/
+            nanobot-postmortem/
+            nanobot-pr-review-expert/
+            nanobot-pricing-strategy/
+            nanobot-product-analytics/
+            nanobot-product-discovery/
+            nanobot-product-strategist/
+            nanobot-programmatic-seo/
+            nanobot-project-health/
+            nanobot-prompt-engineer/
+            nanobot-prompt-engineer-toolkit/
+            nanobot-rag-architect/
+            nanobot-red-team/
+            nanobot-referral-program/
+            nanobot-release-manager/
+            nanobot-resume/
+            nanobot-revenue-operations/
+            nanobot-risk-management/
+            nanobot-roadmap-communicator/
+            nanobot-runbook-generator/
+            nanobot-saas-metrics-coach/
+            nanobot-sales-engineer/
+            nanobot-scenario-war-room/
+            nanobot-schema-markup/
+            nanobot-scrum-master/
+            nanobot-security-pen-testing/
+            nanobot-self-improving-agent/
+            nanobot-senior-backend/
+            nanobot-senior-computer-vision/
+            nanobot-senior-data-engineer/
+            nanobot-senior-data-scientist/
+            nanobot-senior-frontend/
+            nanobot-senior-fullstack/
+            nanobot-senior-ml-engineer/
+            nanobot-senior-pm/
+            nanobot-senior-qa/
+            nanobot-senior-secops/
+            nanobot-senior-security/
+            nanobot-seo-audit/
+            nanobot-signup-flow-cro/
+            nanobot-site-architecture/
+            nanobot-social-content/
+            nanobot-social-media-analyzer/
+            nanobot-social-media-manager/
+            nanobot-solo-founder/
+            nanobot-strategic-alignment/
+            nanobot-stress-test/
+            nanobot-stripe-integration-expert/
+            nanobot-tdd-guide/
+            nanobot-tech-debt/
+            nanobot-tech-stack-evaluator/
+            nanobot-testrail/
+            nanobot-ui-design-system/
+            nanobot-user-story/
+            nanobot-ux-researcher-designer/
+            nanobot-working-capital-analyst/
+            nanobot-x-twitter-growth/
 ```
 
 ## Documentation
